@@ -14,6 +14,16 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,vue}": [
+     "eslint --fix"
+    ]
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
